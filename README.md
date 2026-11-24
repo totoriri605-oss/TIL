@@ -1,53 +1,27 @@
-# TIL
-오늘 배운 내용을 기록하는 저장소
-📚 학습 목표
-파이썬의 기초 문법 이해하기
-Django를 이용해 웹사이트 만들어 보기
-Git과 GitHub 사용법 익히기
-오류가 발생했을 때 원인을 찾아 해결해 보기
-AI가 작성한 코드를 그대로 사용하지 않고 직접 이해하기
-📅 Today I Learned
-2026-08-19 |
-오늘 배운 내용
+# TIL — 배우고 직접 확인한 기록
 
-오늘은 파이썬과 Django 프로젝트에서 사용하는 기본 명령어를 배웠습니다.
+Python과 백엔드의 기초부터 RAG 프로젝트까지, 배운 내용과 직접 실험한 과정을 기록합니다. AI의 답변을 그대로 받아들이기보다 자료와 결과를 확인하고 제 말로 이해하는 것을 목표로 합니다.
 
-가상환경 생성하기
-가상환경 활성화하기
-Django 데이터베이스 변경 사항 반영하기
-Django 개발 서버 실행하기
-GitHub에 TIL 저장소 만들기
-오늘 사용한 명령어
-python -m venv .venv
-파이썬 프로젝트 전용 가상환경을 만드는 명령어입니다.
-.\.venv\Scripts\Activate.ps1
-Windows PowerShell에서 가상환경을 활성화하는 명령어입니다.
-python manage.py makemigrations
-모델의 변경 내용을 데이터베이스 설계도 파일로 만드는 명령어입니다.
-python manage.py migrate
-만들어진 설계도를 실제 데이터베이스에 반영하는 명령어입니다.
-python manage.py runserver
-Django 개발 서버를 실행하는 명령어입니다.
-어려웠던 점
+## RAG 학습
 
-처음에는 makemigrations와 migrate가 비슷해 보여서 차이를 이해하기 어려웠습니다.
+- [RAG 전체 흐름과 PDF 파싱](RAG/01-rag-flow-and-pdf.md)
+- [검색 방식: TF-IDF, BM25, 벡터와 Hybrid](RAG/02-retrieval.md)
+- [청킹: 표·각주와 부모–자식 구조](RAG/03-chunking.md)
+- [평가 지표와 오답 분석](RAG/04-evaluation.md)
 
-또한 명령어를 어디에 입력해야 하는지, 가상환경은 왜 필요한지도 헷갈렸습니다.
+## 프로젝트와 협업
 
-이해한 내용
+- [Brother RAG 프로젝트: 11월 20~23일 작업 흐름](Daily/2026-11-20-23-brother-rag-work-log.md)
+- [RAG 검색 비교: 11월 22일](Daily/2026-11-22-rag-retrieval-evaluation.md)
+- [공통 사양표와 청킹 실험: 11월 23일](Daily/2026-11-23-rag-search-and-chunking.md)
+- [Git과 AI 도구로 협업하기](Git-GitHub/01-project-collaboration.md)
 
-makemigrations는 데이터베이스에 반영할 설계도를 만드는 과정이고,
-migrate는 그 설계도를 실제 데이터베이스에 적용하는 과정이라는 것을 알게 되었습니다.
+## Python과 백엔드
 
-쉽게 표현하면 다음과 같습니다.
+- [Python 기초 기록 모음](Python/)
+- [Python·Django 첫걸음: 2026-08-19](Daily/2026-08-19-python-django-first-steps.md)
+- [FastAPI 백엔드 뼈대](Backend/2026-11-07-fastapi-backend-skeleton-t13.md)
+- [백엔드, RAG, AI 엔지니어링](Daily/2026-11-07-backend-rag-ai-engineering.md)
+- [운영 정책과 상태 모델](Daily/2026-11-09-t80-moderation-policy-state-model.md)
 
-makemigrations = 변경 사항 설계하기
-migrate = 설계한 내용을 실제로 적용하기
-runserver = 만든 웹사이트 실행하기
-오늘의 느낀 점
-
-처음 보는 명령어가 많아 어렵게 느껴졌지만, 직접 입력하고 결과를 확인하니 조금씩 역할을 이해할 수 있었습니다.
-
-AI가 코드를 만들어 줄 수는 있지만, 그 코드가 어떤 역할을 하는지 이해하고 직접 확인하는 과정이 중요하다는 것을 알게 되었습니다.
-
-앞으로도 배운 내용을 제 언어로 정리하며 꾸준히 기록하겠습니다. 🚀
+각 글에서 실제 실험 결과와 앞으로 확인할 계획을 구분합니다. 질문과 정답 기준은 점검하고, 비밀키와 공개 권한이 없는 원본 자료는 저장하지 않습니다.
